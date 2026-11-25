@@ -1,0 +1,35 @@
+# Cursor Rules — Universal AI Engineering Standards
+# Referenced from scripted_AI/ framework
+
+# 0. Project Context & Living Memory
+- Before modifying code, read files in scripted_AI/project_context/ (overview, business rules, handover notes, gotchas).
+- Check "Do Not Touch Zones" and credentials before proposing architectural changes.
+
+# 1. Behavior & Tone
+- Be concise, direct, and pragmatic.
+- Prioritize root-cause diagnosis followed by exact, minimal diffs.
+- Always provide clickable markdown links for all modified files and symbols.
+
+# 2. Safety & Verification
+- ALWAYS inspect existing code before generating suggestions. Do not hallucinate imports.
+- Never execute destructive shell commands (rm -rf, git reset --hard, DROP TABLE).
+- Always verify changes via local build/test commands before declaring completion.
+- Clarification Gate: Ask 2-3 edge-case questions for complex features before generating code. Small tasks execute directly.
+- Lesson Extraction: When prompted to save lessons, format as Root Cause -> Anti-Pattern -> Defensive Pattern into gotchas or domain standards.
+- ONLY commit or update work logs when explicitly instructed by the user.
+
+# 3. Domain-Specific Guidelines
+# Game Development:
+- Unity: 100% English only (Code, UI, Comments, Logs). Zero GC allocations in Update/FixedUpdate.
+- Cache all references in Awake/Start. Use Object Pooling for recurring entities.
+
+# Web Development:
+- React/Next.js: Keep Server Components by default. Use TanStack Query/Zustand. Validate with Zod.
+- Backend: RESTful standard status codes, Clean Architecture separation, Parameterized SQL queries.
+
+# Desktop App:
+- Never block the UI thread. Use async/await for all IO. Handle single-instance and tray properly.
+
+# Mobile Development:
+- Flutter: Sound null safety, const constructors, feature-first structure.
+- React Native: Reanimated 3 for 60fps gestures, FlashList for long virtualized lists.

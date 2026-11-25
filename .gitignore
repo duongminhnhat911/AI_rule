@@ -1,0 +1,28 @@
+# Environment & Secrets
+.env
+.env.local
+*.key
+*.pem
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python / Script caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary & Backup files
+*.bak
+*.tmp
+*.log
+scratch/
