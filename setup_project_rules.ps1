@@ -77,11 +77,22 @@ if ($Domain -eq "all") {
     }
 }
 
-# 6. Copy Templates
+# 6. Copy UI/UX Pro Max Skill for UI-bearing domains (web, app, mobile, all)
+if ($Domain -in @("web", "app", "mobile", "all")) {
+    $SkillSrc = Join-Path $SourceRoot "skills\ui-ux-pro-max"
+    if (Test-Path $SkillSrc) {
+        Write-Host "-> Copying UI/UX Pro Max Skill (offline design system search)..." -ForegroundColor Yellow
+        $SkillDst = Join-Path $TargetScripted "skills\ui-ux-pro-max"
+        New-Item -ItemType Directory -Force -Path $SkillDst | Out-Null
+        Copy-Item -Path "$SkillSrc\*" -Destination $SkillDst -Recurse -Force
+    }
+}
+
+# 7. Copy Templates
 Write-Host "-> Copying project templates..." -ForegroundColor Yellow
 Copy-Item -Path (Join-Path $SourceRoot "templates\*") -Destination (Join-Path $TargetScripted "templates") -Recurse -Force
 
-# 7. Copy root agent bridges (.agents/AGENTS.md, CLAUDE.md, .cursorrules)
+# 8. Copy root agent bridges (.agents/AGENTS.md, CLAUDE.md, .cursorrules)
 Write-Host "-> Configuring Agent Bridges (Antigravity, Claude Code, Cursor)..." -ForegroundColor Yellow
 Copy-Item -Path (Join-Path $SourceRoot ".agents\AGENTS.md") -Destination (Join-Path $TargetResolved ".agents\AGENTS.md") -Force
 Copy-Item -Path (Join-Path $SourceRoot "CLAUDE.md") -Destination (Join-Path $TargetResolved "CLAUDE.md") -Force

@@ -33,3 +33,6 @@
 # Mobile Development:
 - Flutter: Sound null safety, const constructors, feature-first structure.
 - React Native: Reanimated 3 for 60fps gestures, FlashList for long virtualized lists.
+
+# UI/UX Design Intelligence:
+- For new UI pages, dashboards, color palettes, or typography, use scripted_AI/skills/ui-ux-pro-max/scripts/search.py --design-system (offline BM25 search, 0 token).

@@ -30,3 +30,4 @@
 - **Web (React / Next / Backend):** See `scripted_AI/domain_standards/web/`. Clean Architecture, Server vs Client components, OWASP security.
 - **Desktop App (Tauri / .NET):** See `scripted_AI/domain_standards/app/`. Single instance mutex, non-blocking UI thread, IPC safety.
 - **Mobile (Flutter / React Native):** See `scripted_AI/domain_standards/mobile/`. Sound null safety, offline-first SQLite sync, permission etiquette.
+- **UI/UX Design System:** See `scripted_AI/skills/ui-ux-pro-max/SKILL.md`. Run `search.py --design-system` offline for palettes, typography, and stack UI best practices instead of reading raw CSVs.

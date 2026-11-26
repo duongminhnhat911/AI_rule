@@ -86,7 +86,11 @@ scripted_AI/
 │       └── mobile_resilience_ux.md     # Offline-first SQLite sync, tiết kiệm Pin/GPS, Just-in-time permissions
 │
 ├── skills/                        # 🎨 THƯ MỤC CHỨA CÁC GÓI KỸ NĂNG CHUYÊN SÂU MỞ RỘNG (SKILL PACKS)
-│   └── README.md                  # Hướng dẫn cắm thêm các skill mở rộng (UI/UX, DevOps, Security...)
+│   ├── README.md                  # Hướng dẫn cắm thêm các skill mở rộng (DevOps, Security, DB...)
+│   └── ui-ux-pro-max/             # Lõi UI/UX Pro Max (BM25 offline search, 0 dependency, 20+ stack CSV)
+│       ├── SKILL.md               # Chỉ thị kích hoạt cho AI
+│       ├── scripts/               # core.py, design_system.py, search.py
+│       └── data/                  # Bảng màu, typography, motion, UX guidelines, stacks/*.csv
 │
 └── templates/                     # 📝 CÁC MẪU VĂN BẢN QUẢN TRỊ DỰ ÁN
     ├── ADR-template.md            # Architecture Decision Record mẫu

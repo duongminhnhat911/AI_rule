@@ -80,6 +80,11 @@ Tùy thuộc vào phần mềm đang làm việc, AI tự động kích hoạt b
 * **[Mobile Resilience & UX](../domain_standards/mobile/mobile_resilience_ux.md):**
   - Offline-first SQLite synchronization, tiết kiệm Pin & GPS, Just-in-time permissions.
 
+### 🎨 E. Thiết Kế Giao Diện & Trải Nghiệm (UI/UX Pro Max Skill)
+*Kích hoạt khi thiết kế trang mới, Dashboard, Landing Page, Mobile/Desktop UI, chọn màu sắc, typography hoặc review UX:*
+* **[UI/UX Pro Max Skill](../skills/ui-ux-pro-max/SKILL.md):**
+  - Tra cứu Design System offline (0 token) qua `skills/ui-ux-pro-max/scripts/search.py` (`--design-system`, `--domain`, `--stack`). Không đọc thẳng file CSV lớn vào context.
+
 ---
 
 ## 📌 3. QUY ĐỊNH ĐẶC THÙ CỦA DỰ ÁN (PROJECT-SPECIFIC OVERRIDES)
